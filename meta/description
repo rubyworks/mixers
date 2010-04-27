@@ -1,0 +1,6 @@
+Ruby Mixers is collection mixin modules for the Ruby
+programming language. Mixers is a spin-off of Ruby
+Facets. When Ruby Facets scaled back to extensions
+only project, it's mixin modules were gathered to
+create this new project.
+

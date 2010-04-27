@@ -1,0 +1,15 @@
+#!mast -x Syckfile bin lib meta qed test [A-Z]*
+lib/mixers/cloneable.rb
+lib/mixers/enumargs.rb
+lib/mixers/equitable.rb
+lib/mixers/expirable.rb
+lib/mixers/hook.rb
+lib/mixers/instantiable.rb
+lib/mixers/ostructable.rb
+lib/mixers/preinitialize.rb
+lib/mixers/registerable.rb
+meta/name
+meta/suite
+meta/verison
+README
+HISTORY
