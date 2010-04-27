@@ -1,4 +1,4 @@
-require 'facets/cloneable'
+require 'mixers/cloneable'
 require 'test/unit'
 
 class Foo

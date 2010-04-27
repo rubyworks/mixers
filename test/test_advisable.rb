@@ -1,5 +1,5 @@
+require 'mixers/advisable'
 require 'test/unit'
-require 'advisable'
 
 class TestAdvice < Test::Unit::TestCase
 
