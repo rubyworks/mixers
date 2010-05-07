@@ -1,0 +1,72 @@
+= Enumerable::Arguments
+
+Require the library.
+
+  require 'mixers/enumargs'
+
+This will serve as our example class.
+
+  class PlusArray
+    include Enumerable::Arguments
+
+    def initialize(arr)
+      @arr = arr
+    end
+
+    def each(n=0)
+      @arr.each{ |e| yield(e+n) }
+    end
+  end
+
+test #collect
+
+  t = PlusArray.new([1,2,3])
+  t.collect(4){ |e| e }.assert == [5,6,7]
+
+test #each_slice
+
+  t = PlusArray.new([1,2,3,4])
+  a = []
+  t.each_slice(2,4){ |e,f| a << [e,f] }
+  a.assert == [[5,6],[7,8]]
+
+test #find
+
+  t = PlusArray.new([1,2,3,4])
+  f = t.find(2, :ifnone=>lambda{:NOPE}) { |a| a == 10 }
+  f.assert == :NOPE
+
+test #grep
+
+  # TODO
+
+Covert to an array using #to_a.
+
+  t = PlusArray.new([1,2,3])
+  t.to_a(4).assert == [5,6,7]
+
+Get the minimum value using #min.
+
+  t = PlusArray.new([1,2,3])
+  t.min(4).assert == 5
+
+Get the maximum value using #min.
+
+  t = PlusArray.new([1,2,3])
+  t.max(4).assert == 7
+
+test #include?
+
+  t = PlusArray.new([1,2,3])
+  t.assert.include?(7,4)
+
+test #select
+
+  t = PlusArray.new([1,2,3])
+  t.select(4){ |x| x == 6 }.assert == [6]
+
+test #reject
+
+  t = PlusArray.new([1,2,3])
+  t.reject(4){ |x| x == 6 }.assert == [5,7]
+

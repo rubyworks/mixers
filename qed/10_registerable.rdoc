@@ -1,0 +1,37 @@
+= Registerable
+
+Require the library.
+
+  require 'mixers/registerable'
+
+
+Registerable can be used directory...
+
+  module MyStuff
+    extend Registerable
+  end
+
+  MyStuff.register(:x)
+
+
+Registrable can also be used as bas class callback.
+
+  class Abstract
+    extend Registerable
+
+    def self.inherited(base)
+      register(base.name.split('::').last.downcase)
+    end
+  end
+
+Now when we inherit from Abstract, the subclass will
+be automatically registered.
+
+  class Example < Abstract
+  end
+
+We see that the class is in the Abstract registry.
+
+  Abstract.registry['example'].assert == Example
+
+
