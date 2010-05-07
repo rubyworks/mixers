@@ -58,11 +58,14 @@ And let's see what a subclass of the example does:
       end
     end
 
-And the results:
-
     y = Y.new
-    r = y.x
-    o = y.out
-    r.assert == "{x}"
-    o.assert == ["BEFORE Y#x", "BEFORE X#x", "Y#x", "X#x", "AFTER X#x", "AFTER Y#x"]
+
+The result of #x should be a bracketed "x".
+
+    y.x.assert == "{x}"
+
+Then the out variable should indicate where the call has been.
+
+    y.out.assert == ["BEFORE Y#x", "BEFORE X#x", "Y#x", "X#x", "AFTER X#x", "AFTER Y#x"]
+
 
