@@ -4,25 +4,34 @@
 #
 module Expirable
 
-  attr_accessor :expires
+  attr_accessor :expiration
 
   # Set the expires timeout for this entry.
 
-  def expires_after(timeout = (60*60*24))
-    @expires = Time.now + timeout
+  def expiration=(time)
+    case time
+    when Time, Date, DateTime
+      @expiration = time
+    else
+      @expiration = Time.now + time
+    end
   end
 
-  # Set the expire timeout for this entry. The timeout happens
-  # after (base + rand(spread)) seconds.
+  #def expires_after(timeout = 86400)
+  #  @expires = Time.now + timeout
+  #end
 
-  def expires_spread(base, spread)
-    @expires = Time.now + base + rand(spread)
-  end
+  ## Set the expire timeout for this entry. The timeout happens
+  ## after (base + rand(spread)) seconds.
+  #
+  #def expires_spread(base, spread)
+  #  @expires = Time.now + base + rand(spread)
+  #end
 
   # Is this entry expired?
 
   def expired?
-    if @expires.nil? or (Time.now > @expires)
+    if @expiration.nil? or (Time.now > @expiration)
       return true
     else
       return false

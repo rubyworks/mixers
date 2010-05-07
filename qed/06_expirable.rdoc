@@ -1,0 +1,32 @@
+= Expirable
+
+Require the library.
+
+  require 'mixers/expirable'
+
+Example class.
+
+  class X
+    extend Expirable
+  end
+
+Now the experation can be set to a Time object, or a number of seconds
+from +Time.now+. For instance, to set the expiration for one second
+from now:
+
+  X.expiration = 1
+
+We can see the the object has not yet expired.
+
+  X.refute.expired?
+
+But if we wait one second.
+
+  sleep 1
+
+Then it will have expired.
+
+  X.assert.expired?
+
+Expiration does not invoke a trigger, it is merely queriable.
+
