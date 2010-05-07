@@ -4,9 +4,9 @@ module Registerable
 
   # Register format names.
 
-  def register(*names)
+  def register(obj, *names)
     names.each do |name|
-      registry[name.to_s] = self
+      registry[name] = obj
     end
   end
 

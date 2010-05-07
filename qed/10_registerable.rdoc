@@ -4,23 +4,26 @@ Require the library.
 
   require 'mixers/registerable'
 
-
-Registerable can be used directory...
+Registerable can be used directly.
 
   module MyStuff
     extend Registerable
   end
 
-  MyStuff.register(:x)
+  MyStuff.register(10, :x)
 
+Then the MyStuff registry will contain 10 indexed by :x.
 
-Registrable can also be used as bas class callback.
+  MyStuff.registry[:x].assert == 10
+
+Registrable can also be used as a base class callback to
+track subclasses.
 
   class Abstract
     extend Registerable
 
     def self.inherited(base)
-      register(base.name.split('::').last.downcase)
+      register(base, base.name.split('::').last.downcase)
     end
   end
 
