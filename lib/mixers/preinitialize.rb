@@ -25,6 +25,7 @@
 #   end
 #
 #   class X
+#     include Preinitializable
 #     include M
 #     def a ; @a ; end
 #   end

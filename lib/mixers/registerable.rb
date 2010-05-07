@@ -27,3 +27,4 @@ module Registerable
   end
 
 end
+
