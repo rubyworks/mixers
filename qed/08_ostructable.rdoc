@@ -1,0 +1,23 @@
+= OpenStructable
+
+Require the library.
+
+  require 'mixers/ostructable'
+
+We will use the simpliest example class:
+
+  class X
+    include OpenStructable
+  end
+
+  x = X.new
+
+So arbitrary attributes can be added to the object
+just as if it were an OpenStruct.
+
+  x.a = 1
+  x.b = 2
+
+  x.assert.a == 1
+  x.assert.a == 2
+
