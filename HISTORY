@@ -1,0 +1,12 @@
+= RELEASE HISTORY
+
+== 1.1.0 / 2010-05-07
+
+Thie release include a complete rewrite of the Advisable mixin
+and bug fixes to the Registerable mixin. Also QED doc/tests
+had been added for almost all mixins.
+
+== 1.0.0 / 2010-05-02
+
+Initial release of libraries as take directory from Ruby Facets.
+
