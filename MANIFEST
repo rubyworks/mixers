@@ -12,10 +12,16 @@ lib/mixers/registerable.rb
 meta/authors
 meta/contact
 meta/description
-meta/homepage
 meta/name
-meta/resource/development
-meta/resource/homepage
+meta/repository
+meta/sites/api
+meta/sites/blog
+meta/sites/development
+meta/sites/documentation
+meta/sites/homepage
+meta/sites/mail
+meta/sites/source
+meta/sites/wiki
 meta/suite
 meta/summary
 meta/version
@@ -35,5 +41,5 @@ test/test_equitable.rb
 test/test_instantiable.rb
 test/test_preinitilizable.rb
 LICENSE
-README
+README.rdoc
 HISTORY
