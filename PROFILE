@@ -1,0 +1,22 @@
+--- 
+title  : Mixers
+suite  : rubyworks
+summary: Collection of helpful mixin modules
+contact: Trans <transfire@gmail.com>
+license: MIT
+authors: Thomas Sawyer
+created: 2010-05-02
+
+description:
+  Ruby Mixers is collection mixin modules for the Ruby
+  programming language. Mixers is a spin-off of Ruby
+  Facets. When Ruby Facets scaled back to extensions
+  only project, it's mixin modules were gathered to
+  create this new project.
+
+resources:
+  homepage:
+  mailinglist: http://groups.google.com/group/rubyworks-mailinglist
+
+copyright:
+  Copyright (c) 2010 Thomas Sawyer
