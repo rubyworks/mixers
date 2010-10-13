@@ -4,7 +4,7 @@ Require the library.
 
   require 'mixers/ostructable'
 
-We will use the simpliest example class:
+We will use the simpliest example class.
 
   class X
     include OpenStructable

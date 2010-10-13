@@ -12,7 +12,7 @@ Example class.
 
 Now the experation can be set to a Time object, or a number of seconds
 from +Time.now+. For instance, to set the expiration for one second
-from now:
+from now.
 
   X.expiration = 1
 
@@ -20,7 +20,7 @@ We can see the the object has not yet expired.
 
   X.refute.expired?
 
-But if we wait one second.
+But if we wait one seconds.
 
   sleep 1
 
