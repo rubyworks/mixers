@@ -3,7 +3,7 @@ title  : Mixers
 suite  : rubyworks
 summary: Collection of helpful mixin modules
 contact: Trans <transfire@gmail.com>
-license: MIT
+license: Apache 2.0
 authors: Thomas Sawyer
 created: 2010-05-02
 

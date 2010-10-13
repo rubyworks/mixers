@@ -1,5 +1,8 @@
-name : mixers
-major: 1
-minor: 1
-patch: 0
-date : 2010-05-07
+name    : mixers
+date    : 2010-05-07
+version : 1.1.0
+
+requires:
+  - syckle (build)
+  - qed (test)
+

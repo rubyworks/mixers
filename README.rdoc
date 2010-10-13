@@ -9,9 +9,11 @@ Mixers is a spin-off of Ruby Facets. When Ruby Facets
 scaled back to extensions only project, it's mixin 
 modules were gathered to create this new project.
 
-== COPYRIGHTS
+== COPYRIGHT
 
-Ruby Mixers Copyright (c) 2010 Thomas Sawyer
+(Apache 2.0 License)
 
-Ruby Mixers is distibuted under the terms of the MIT license.
+Ruby Mixers, Copyright (c) 2010 Thomas Sawyer
+
+Ruby Mixers is distibuted under the terms of the Apache 2.0 license.
 
