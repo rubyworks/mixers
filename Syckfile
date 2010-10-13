@@ -24,7 +24,7 @@ ridoc:
   include: ~
   exclude: ~
   output : ri
-  active : true
+  active : false
 
 rdoc:
   service : RDoc
@@ -32,7 +32,7 @@ rdoc:
   include : ~
   exclude : [ Syckfile ]
   output  : doc
-  active  : true
+  active  : false
 
 syntax:
   service  : Syntax

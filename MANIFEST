@@ -1,5 +1,4 @@
 #!mast -x Syckfile bin lib meta qed test [A-Z]*
-lib/mixers/advisable.rb
 lib/mixers/cloneable.rb
 lib/mixers/enumargs.rb
 lib/mixers/equitable.rb
@@ -9,7 +8,8 @@ lib/mixers/instantiable.rb
 lib/mixers/ostructable.rb
 lib/mixers/preinitialize.rb
 lib/mixers/registerable.rb
-qed/01_advisable.rdoc
+lib/mixers/version.yml
+lib/mixers.rb
 qed/02_cloneable.rdoc
 qed/03_enumargs.rdoc
 qed/04_equitable.rdoc
