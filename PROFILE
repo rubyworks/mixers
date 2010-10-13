@@ -15,8 +15,9 @@ description:
   create this new project.
 
 resources:
-  homepage:
-  mailinglist: http://groups.google.com/group/rubyworks-mailinglist
+  home: http://rubyworks.github.com/mixers
+  code: http://github.com/rubyworks/mixers
+  mail: http://groups.google.com/group/rubyworks-mailinglist
 
 copyright:
   Copyright (c) 2010 Thomas Sawyer
