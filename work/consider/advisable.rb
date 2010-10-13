@@ -27,15 +27,15 @@ module Advisable
   end
 
   def advice_before
-    @@advice_before ||= Hash.new{|h,k| h[k] = []}
+    @advice_before ||= Hash.new{|h,k| h[k] = []}
   end
 
   def advice_after
-    @@advice_after ||= Hash.new{|h,k| h[k] = []}
+    @advice_after ||= Hash.new{|h,k| h[k] = []}
   end
 
   def advice_around
-    @@advice_around ||= Hash.new{|h,k| h[k] = []}
+    @advice_around ||= Hash.new{|h,k| h[k] = []}
   end
 
   # TODO: Should around advice be fed the result of the last around advice?
