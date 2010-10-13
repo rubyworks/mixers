@@ -1,5 +1,12 @@
 = RELEASE HISTORY
 
+== 1.2.0 / 2010-10-12
+
+This release deprecates the Advisable mixin, as it was not
+operating correctly, and I beleive requires a complete rewrite
+to do so --which I am not endeavoring into because it has become
+clear there are much better ways to appoach the needs it addressed.
+
 == 1.1.0 / 2010-05-07
 
 Thie release include a complete rewrite of the Advisable mixin
