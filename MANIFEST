@@ -1,4 +1,5 @@
-#!mast -x Syckfile bin lib meta qed test [A-Z]*
+#!mast -x Syckfile -x PROFILE .ruby bin lib man spec test [A-Z]*
+.ruby
 lib/mixers/cloneable.rb
 lib/mixers/enumargs.rb
 lib/mixers/equitable.rb
@@ -10,21 +11,20 @@ lib/mixers/preinitialize.rb
 lib/mixers/registerable.rb
 lib/mixers/version.yml
 lib/mixers.rb
-qed/02_cloneable.rdoc
-qed/03_enumargs.rdoc
-qed/04_equitable.rdoc
-qed/05_instantiable.rdoc
-qed/06_expirable.rdoc
-qed/08_ostructable.rdoc
-qed/09_preinitialize.rdoc
-qed/10_registerable.rdoc
+spec/02_cloneable.rdoc
+spec/03_enumargs.rdoc
+spec/04_equitable.rdoc
+spec/05_instantiable.rdoc
+spec/06_expirable.rdoc
+spec/08_ostructable.rdoc
+spec/09_preinitialize.rdoc
+spec/10_registerable.rdoc
 test/test_advisable.rb
 test/test_cloneable.rb
 test/test_enumargs.rb
 test/test_equitable.rb
 test/test_instantiable.rb
 test/test_preinitilizable.rb
-PROFILE
 LICENSE
 README.rdoc
 HISTORY

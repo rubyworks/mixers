@@ -1,8 +1,1 @@
-name    : mixers
-date    : 2010-10-12
-version : 1.2.0
-
-requires:
-  - syckle (build)
-  - qed (test)
-
+1.2.0
